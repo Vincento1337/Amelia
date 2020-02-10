@@ -1,0 +1,294 @@
+/* roboto-300 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v20-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-cyrillic_latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*general styles*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2F2F2F;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/*bread crumbs styles*/
+.bread-crumbs-block {
+  margin: 23px 0;
+}
+
+.bread__link {
+  margin-right: 4px;
+  font-size: 15px;
+  font-weight: inherit;
+  color: #EB4644;
+}
+
+.bread__link_disabled {
+  color: #A49D99;
+  text-decoration: none;
+}
+
+.bread__icon {
+  margin-right: 4px;
+  text-decoration: none;
+}
+
+.bread__icon_disabled {
+  color: #A49D99;
+}
+
+/*cart styles*/
+.cart-text {
+  margin-right: 35px;
+  font-size: 15px;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/*table styles*/ 
+.cart__table {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  max-width: 1000px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart__table td {
+  text-align: center;
+  border-collapse: collapse;
+  border-top: 1px solid #DAC7BA;
+  border-bottom: 1px solid #DAC7BA;
+}
+
+.cart__table td:first-child {
+  border-left: 1px solid #DAC7BA;
+}
+
+.cart__table td:last-child {
+  border-right: 1px solid #DAC7BA;
+}
+
+.table-title {
+  padding: 13px 0;
+  font: inherit;
+  color: #8C8C8C;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.table-cell__pic {
+  padding: 20px 0;
+}
+
+.table-cell__name {
+  padding: 20px;
+  max-width: 220px;
+}
+
+.cart-table__goods-name {
+  display: block;
+  font-size: 17px;
+  font-weight: 400;
+  color: #2B2C33;
+  text-transform: uppercase;
+}
+
+.cart-table__goods-capacity {
+  display: block;
+  font-size: 15px;
+  font-weight: inherit;
+  color: #8C8C8C;
+}
+
+.table-cell__discount {
+  padding
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: #232323;
+}
+
+.table-cell__discount-value {
+  padding: 9px 11px;
+  border: 1px solid #EB4644;
+}
+
+.table-cell__price-value {
+  display: block;
+  font-size: 21px;
+  font-weight: inherit;
+  color: #232323;
+}
+
+.table-cell__price-del {
+  display: block;
+  font-size: 21px;
+  font-weight: inherit;
+  color: #C6C6C6;
+  text-decoration: line-through;
+}
+
+.table-cell__quantity {
+  text-align: center;
+}
+
+.table-cell__quantity-value {
+  position: relative;
+  display: inline-block;
+  padding: 9px 25px;
+  font-size: 15px;
+  font-weight: inherit;
+  color: #252525;
+  border: 1px solid #F8EEE7;
+}
+
+.table-cell__quantity-value::before,
+.table-cell__quantity-value::after {
+  position: absolute;
+  top: 20%;
+  font-size: 18px;
+  font-weight: inherit;
+  color: #252525;
+}
+
+.table-cell__quantity-value::before {
+  content: "-";
+  display: block;
+  left: 9px;
+}
+
+.table-cell__quantity-value::after {
+  content: "+";
+  display: block;
+  right: 9px;
+}
+
+.table-cell__total-value {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #252525;
+  text-align: left;
+}
+
+.table-cell__total-value::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 11%;
+  right: 10px;
+  width: 21px;
+  height: 23px;
+  background: #EB4644 url("../image/trash.png") no-repeat;
+}
+
+/* total styles*/
+.total {
+  margin-bottom: 60px;
+}
+
+.total__text {
+  margin-bottom: 40px;
+  padding: 15px 0;
+  border: 1px solid #DAC7BA;
+}
+
+.total__full-price {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 400;
+  color: #232323;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.total__full-price__quantity,
+.total__full-price__value {
+  color: #EB4644;
+}
+
+.total__discount {
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  color: #232323;
+  text-transform: uppercase;
+}
+
+.total__discount-value {
+  color: #EB4644;
+}
+
+.total__order-checkout {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 0;
+  width: 207px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #EB4644;
+}

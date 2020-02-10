@@ -1,0 +1,208 @@
+/* roboto-300 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v20-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-cyrillic_latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*general styles*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2F2F2F;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/*bread crumbs styles*/
+.bread-crumbs-block {
+  margin: 23px 0;
+}
+
+.bread__link {
+  margin-right: 4px;
+  font-size: 15px;
+  font-weight: inherit;
+  color: #EB4644;
+}
+
+.bread__link_disabled {
+  color: #A49D99;
+  text-decoration: none;
+}
+
+.bread__icon {
+  margin-right: 4px;
+}
+
+.bread__icon_disabled {
+  color: #A49D99;
+}
+
+/* map styles*/
+.map {
+  margin-bottom: 50px;
+  padding-top: 226px;
+  min-height: 600px;
+  background: #707070 url("../image/map.png") no-repeat center top / cover;
+}
+
+.map__info {
+  position: relative;
+  margin: 0 auto;
+  padding: 16px 30px;
+  max-width: 350px;
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+.map__info::after {
+  display: block;
+  position: absolute;
+  content: "";
+  left: 46%;
+  bottom: -12px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.info__text {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 15px;
+  font-weight: 300;
+
+}
+
+/*question styles*/ 
+.question {
+  padding-bottom: 74px;
+}
+
+.question__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 34px;
+  font-weight: 500;
+  color: inherit;
+  text-align: center;
+}
+
+.question__form {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.form__row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+input {
+  display: block;
+  margin-bottom: 13px;
+  padding: 13px 20px;
+  width: 45%;
+  max-width: 100%;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid #707070;
+}
+
+input[name="captcha-content"] {
+  margin-bottom: 0;
+  margin-left: 150px;
+  position: relative;
+  max-width: 233px;
+  width: 233px;
+  text-align: left;
+}
+
+.captcha__pic {
+  position: absolute;
+  width: 120px;
+  min-width: 80px;
+}
+
+input[type="submit"] {
+  margin-bottom: 0;
+  width: 185px;
+  color: #ffffff;
+  background-color: #EB4644;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+
+textarea {
+  margin-bottom: 19px;
+  width: 100%;
+  padding: 10px;
+  font: inherit;
+  resize: none;
+  border: 1px solid #707070;
+}

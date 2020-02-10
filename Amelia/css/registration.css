@@ -1,0 +1,178 @@
+/* roboto-300 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v20-cyrillic_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'),
+       url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+       url('../fonts/roboto-v20-cyrillic_latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*general styles*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2F2F2F;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+/*bread crumbs styles*/
+.bread-crumbs-block {
+	margin: 23px 0;
+}
+
+.bread__link {
+	margin-right: 4px;
+	font-size: 15px;
+	font-weight: inherit;
+	color: #EB4644;
+}
+
+.bread__link_disabled {
+	color: #A49D99;
+	text-decoration: none;
+}
+
+.bread__icon {
+	margin-right: 4px;
+}
+
+.bread__icon_disabled {
+	color: #A49D99;
+}
+
+/*registration styles*/
+.registration__title {
+	margin-bottom: 28px;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+	color: inherit;
+	text-transform: uppercase;
+}
+
+.registration__form {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 38px;
+	width: 400px;
+}
+
+input {
+	display: block;
+	margin-bottom: 13px;
+	padding: 13px 20px;
+	width: 100%;
+	max-width: 100%;
+	font-size: 17px;
+	font-weight: 300;
+	text-align: center;
+	border: 1px solid #707070;
+}
+
+.registration__protection {
+	display: block;
+	margin-top: 42px;
+	margin-bottom: 18px;
+	font-size: 16px;
+	font-weight: inherit;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.registration__captcha {
+	margin-bottom: 31px;
+}
+
+input[name="captcha-content"] {
+	position: relative;
+	margin-left: auto;
+	width: 60%;
+	text-align: left;
+}
+
+.captcha__pic {
+	position: absolute;
+	width: 120px;
+	min-width: 80px;
+}
+
+input[type="submit"] {
+	margin: 0 auto;
+	width: 185px;
+	color: #ffffff;
+	background-color: #EB4644;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+}
+
+.registration__notes {
+	margin-bottom: 52px;
+	text-transform: uppercase;
+}
+
+.notes__text {
+	display: block;
+	text-align: center;
+	font-size: 13px;
+	font-weight: inherit;
+}
+
+.registration__authorization {
+	display: block;
+	text-align: center;
+	color: #EB4644;
+	text-transform: uppercase;
+}
